@@ -1,7 +1,11 @@
 
 
+
+
 const NetworkConnection = () => {
-    return (<p>connect networks</p>)
+    return (<div>
+        network connection
+    </div>)
 }
 
 export default NetworkConnection;
