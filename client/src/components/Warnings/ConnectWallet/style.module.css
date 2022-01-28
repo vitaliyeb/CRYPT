@@ -12,6 +12,12 @@
     margin-bottom: 0;
 }
 
+.err {
+    font-size: .8rem;
+    color: red;
+    text-align: center;
+}
+
 .connect {
     color: #FCFCFC;
     font-size: .9rem;
