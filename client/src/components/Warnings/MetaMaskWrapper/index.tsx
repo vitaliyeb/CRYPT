@@ -1,11 +1,10 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import styles from './style.module.css';
 
 
 const MetaMaskWrapper: React.FC<{
     children: React.ReactNode
 }>= ({ children }) => {
-
 
     return (<div className={styles.wrapper}>
         <img
