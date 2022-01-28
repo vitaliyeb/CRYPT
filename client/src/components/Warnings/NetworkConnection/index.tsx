@@ -2,12 +2,11 @@ import styles from './style.module.css';
 import MetaMaskWrapper from "../MetaMaskWrapper";
 import Loader from "../../Loader";
 
-
 const NetworkConnection = () => {
 
     return (<MetaMaskWrapper>
         <div className={styles.wrapper}>
-            <div>
+            <div className={styles.loaderWrapper}>
                 <Loader />
             </div>
             <p className={styles.title}>Network connection</p>
