@@ -1,0 +1,24 @@
+.title {
+    color: #FCFCFC;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.install {
+    margin-top: 7px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #498399;
+    color: #fff;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 7px 30px;
+    opacity: .8;
+}
+
+.install:hover {
+    opacity: 1
+}
