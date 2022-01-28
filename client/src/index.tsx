@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Routes from "./routes";
 import './index.css';
-import TransactionProvider from "./Context/TransactionContext";
+import TransactionProvider from "./context/TransactionContext";
 import ConnectMetaMask from "./components/ConnectMetaMask";
 
 
