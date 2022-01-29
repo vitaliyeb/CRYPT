@@ -8,14 +8,9 @@ export const TransactionContext = React.createContext<TransactionContextType>({}
 const TransactionProvider: React.FC<{
     children: React.ReactNode
 }> = ({ children }) => {
+    const provider = new ethers.providers.Web3Provider((window as any).ethereum);
+    const signer = provider.getSigner();
 
-    const checkIfWalletIsConnected = () => {
-    }
-
-
-    useEffect(() => {
-        checkIfWalletIsConnected();
-    }, []);
 
     return (<TransactionContext.Provider value={{test: 'test 1'}}>
         {

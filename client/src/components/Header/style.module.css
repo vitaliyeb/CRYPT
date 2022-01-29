@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.wrapper * {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.logo {
+    margin-right: auto;
+    width: 128px;
+    height: 33px;
+}
+
+.link {
+    margin: 0 1rem;
+}
+
+.login {
+    padding: 8px 28px;
+    background-color: #0656e7;
+    border-radius: 17px;
+    margin-left: 1rem;
+}

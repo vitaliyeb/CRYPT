@@ -1,5 +1,6 @@
-import {useContext} from "react";
-import { TransactionContext } from "../../context/TransactionContext";
+import styles from './style.module.css';
+import Header from "../../components/Header";
+import React from "react";
 
 
 
@@ -7,9 +8,16 @@ import { TransactionContext } from "../../context/TransactionContext";
 
 const Main = () => {
 
-    return (<div>
-        Main
-    </div>)
+    const Layout:React.FC = ({ children }) =>
+        (<div className={styles.layout}>{ children }</div>);
+
+    return (<>
+        <div className={styles.gradientBg}>
+            <Layout>
+                <Header />
+            </Layout>
+        </div>
+    </>)
 }
 
 export default Main;

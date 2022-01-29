@@ -9,7 +9,7 @@ const ConnectMetaMask: React.FC<{
     const ethereum = (window as any).ethereum;
     const isInstallMetaMask = typeof ethereum !== 'undefined' && ethereum.isMetaMask;
     const [isConnected, setIsConnected] = useState(ethereum?.isConnected());
-    const [account, setAccount] = useState<string | null>(ethereum.selectedAddress);
+    const [account, setAccount] = useState<string | null>(' s');
 
     useEffect(() => {
         ethereum?.on('connect', ({ chainId }: { chainId: string }) => setIsConnected(ethereum.isConnected()));
@@ -17,8 +17,9 @@ const ConnectMetaMask: React.FC<{
         ethereum?.on('disconnect', (e: Error) => setIsConnected(ethereum.isConnected()));
 
         ethereum?.on('chainChanged', () => window.location.reload());
-    }, []);
 
+        ethereum?.on('accountsChanged', (accounts: string[]) => setAccount(accounts[0]))
+    }, []);
 
     return (<>
         {
