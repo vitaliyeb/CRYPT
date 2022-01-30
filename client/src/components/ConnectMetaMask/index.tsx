@@ -4,12 +4,12 @@ import NetworkConnection from "../Warnings/NetworkConnection";
 import ConnectWallet from "../Warnings/ConnectWallet";
 
 const ConnectMetaMask: React.FC<{
-    children: React.ReactNode
+    children: JSX.Element
 }> = ({ children }) => {
     const ethereum = (window as any).ethereum;
     const isInstallMetaMask = typeof ethereum !== 'undefined' && ethereum.isMetaMask;
     const [isConnected, setIsConnected] = useState(ethereum?.isConnected());
-    const [account, setAccount] = useState<string | null>(' s');
+    const [account, setAccount] = useState<string | null>(ethereum.selectedAddress);
 
     useEffect(() => {
         ethereum?.on('connect', ({ chainId }: { chainId: string }) => setIsConnected(ethereum.isConnected()));
@@ -26,7 +26,7 @@ const ConnectMetaMask: React.FC<{
             isInstallMetaMask ?
                 isConnected ?
                     account ?
-                        children :
+                        React.cloneElement(children, { address: account }) :
                         <ConnectWallet setAccount={setAccount} />
                     :
                     <NetworkConnection />
