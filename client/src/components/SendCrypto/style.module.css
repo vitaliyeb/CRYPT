@@ -1,7 +1,7 @@
 .wrapper {
     padding: 5rem;
     display: grid;
-
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -36,4 +36,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    max-width: 288px;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 160px;
+    background-image: radial-gradient(at 83% 67%,rgb(152,231,156) 0,transparent 58%),radial-gradient(at 67% 20%,hsla(357,94%,71%,1) 0,transparent 59%),radial-gradient(at 88% 35%,hsla(222,81%,65%,1) 0,transparent 50%),radial-gradient(at 31% 91%,hsla(9,61%,61%,1) 0,transparent 52%),radial-gradient(at 27% 71%,hsla(336,91%,65%,1) 0,transparent 49%),radial-gradient(at 74% 89%,hsla(30,98%,65%,1) 0,transparent 51%),radial-gradient(at 53% 75%,hsla(174,94%,68%,1) 0,transparent 45%);
+    background-color: #a099ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconsWrapper {
+    display: flex;
+    margin-bottom: auto;
+    justify-content: space-between;
+}
+
+.ethIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.address {
+    font-size: .87rem;
+}
+
+.cardTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: .5rem;
 }
