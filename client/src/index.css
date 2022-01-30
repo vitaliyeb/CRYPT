@@ -24,3 +24,8 @@ p, a {
 a {
   text-decoration: none;
 }
+
+input, button {
+  outline: none;
+  border: none;
+}

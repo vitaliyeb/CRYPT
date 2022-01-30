@@ -1,6 +1,7 @@
 import styles from './style.module.css';
 import {useContext} from "react";
 import {TransactionContext} from "../../context/TransactionContext";
+import TransactionForm from "../TransactionForm";
 
 const SendCrypto = () => {
     const { address } = useContext(TransactionContext);
@@ -26,7 +27,7 @@ const SendCrypto = () => {
                 <p className={styles.address}>{`${address.slice(0, 8)}...${address.slice(-3)}`}</p>
                 <p className={styles.cardTitle}>Ethereum</p>
             </div>
-
+            <TransactionForm />
         </div>
     </div>)
 }

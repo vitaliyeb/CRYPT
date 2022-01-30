@@ -1,0 +1,35 @@
+.form {
+    display: grid;
+    background-color: rgb(39,51,89,.4);
+    box-sizing: border-box;
+    padding: 1.25rem;
+    border-radius: 16px;
+    gap: 1rem;
+}
+
+.form hr {
+    width: 100%;
+    margin: .3rem 0;
+}
+
+.form input {
+    box-sizing: border-box;
+    padding: .5rem;
+    border-radius: .1rem;
+    background-color: #2d3357;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form button {
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid #2d3357;
+    font-size: .87rem;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    padding: .7rem 1rem;
+    background-color: transparent;
+}
