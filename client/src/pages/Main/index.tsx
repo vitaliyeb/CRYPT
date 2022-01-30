@@ -1,6 +1,7 @@
 import styles from './style.module.css';
 import Header from "../../components/Header";
 import React from "react";
+import SendCrypto from "../../components/SendCrypto";
 
 
 
@@ -15,6 +16,7 @@ const Main = () => {
         <div className={styles.gradientBg}>
             <Layout>
                 <Header />
+                <SendCrypto />
             </Layout>
         </div>
     </>)

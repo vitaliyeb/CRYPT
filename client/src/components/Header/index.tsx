@@ -1,9 +1,6 @@
 import styles from './style.module.css';
 
 
-
-
-
 const Header = () => {
 
     const links = ['Market', 'Exchange', 'Tutorials', 'Wallets'];
