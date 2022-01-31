@@ -1,0 +1,33 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.itemsWrapper {
+    display: grid;
+    gap: 1rem;
+}
+
+.item {
+    border: 1px solid rgba(255,255,255,.3);
+    padding: .87rem;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.05);
+    border-radius: 1rem;
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.iconWrapper {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.heading {
+    padding: 5rem;
+    font-size: 3rem;
+}

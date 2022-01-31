@@ -2,6 +2,7 @@ import styles from './style.module.css';
 import Header from "../../components/Header";
 import React from "react";
 import SendCrypto from "../../components/SendCrypto";
+import Services from "../../components/Services";
 
 
 
@@ -19,6 +20,12 @@ const Main = () => {
                 <SendCrypto />
             </Layout>
         </div>
+        <div className={styles.defaultBg}>
+            <Layout>
+                <Services />
+            </Layout>
+        </div>
+
     </>)
 }
 
