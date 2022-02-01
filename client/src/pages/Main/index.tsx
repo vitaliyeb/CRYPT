@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import React from "react";
 import SendCrypto from "../../components/SendCrypto";
 import Services from "../../components/Services";
+import LastTransactions from "../../components/LastTransactions";
 
 
 
@@ -23,6 +24,7 @@ const Main = () => {
         <div className={styles.defaultBg}>
             <Layout>
                 <Services />
+                <LastTransactions />
             </Layout>
         </div>
 
