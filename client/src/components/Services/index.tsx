@@ -30,11 +30,11 @@ const Services = () => {
         </p>
         <div className={styles.itemsWrapper}>
             {
-                advantage.map(({ title, description, icon }) => (<div className={styles.item} key={title}>
-                    <div className={styles.iconWrapper}>{ icon() }</div>
+                advantage.map(({ title, description, icon, iconBgColor }) => (<div className={styles.item} key={title}>
+                    <div style={{backgroundColor: iconBgColor}} className={styles.iconWrapper}>{ icon() }</div>
                     <div>
-                        { title }
-                        { description }
+                        <p className={styles.itemTitle}>{ title }</p>
+                        <p className={styles.titleDescription}>{ description }</p>
                     </div>
                 </div>))
             }
