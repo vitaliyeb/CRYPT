@@ -4,6 +4,7 @@ import React from "react";
 import SendCrypto from "../../components/SendCrypto";
 import Services from "../../components/Services";
 import LastTransactions from "../../components/LastTransactions";
+import Footer from "../../components/Footer";
 
 
 
@@ -27,7 +28,11 @@ const Main = () => {
                 <LastTransactions />
             </Layout>
         </div>
-
+        <div className={styles.footerBg}>
+            <Layout>
+                <Footer />
+            </Layout>
+        </div>
     </>)
 }
 
