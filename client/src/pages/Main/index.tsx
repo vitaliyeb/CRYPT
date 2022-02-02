@@ -17,6 +17,7 @@ const Main = () => {
 
     return (<>
         <div className={styles.gradientBg}>
+
             <Layout>
                 <Header />
                 <SendCrypto />
