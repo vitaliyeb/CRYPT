@@ -8,7 +8,7 @@ const Footer = () => {
         <img src={'./images/logo.png'}/>
         <nav>
             {
-                navigations.map(link => (<a href={`./${link}`}>{ link }</a>))
+                navigations.map(link => (<a key={link} href={`./${link}`}>{ link }</a>))
             }
         </nav>
     </footer>)
